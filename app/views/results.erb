@@ -1,0 +1,77 @@
+<link 
+rel="stylesheet"
+type="text/css"
+href="index2.css">
+<form id="get-zipcode">
+<p>What's your zipcode? <input type="text" ID = "zipcode"> </p>
+<p><input type="submit"></p></form>
+
+<!-- code how to get form results from form and store in ruby var called zipcode -->
+
+<!-- <% if (zipcode == "10026" || zipcode == "10027" || zipcode =="10030" ||zipcode == "10037" || zipcode == "10039") %>
+<% neighborhood = "Central Harlem" %>
+
+
+<% elsif (zipcode == "10001" || zipcode == "10011"|| zipcode == "10018" ||zipcode == "10019" || zipcode == "10036")%>
+<% neighborhood = "Chelsea" %>
+
+<% elsif (zipcode == "10010" || zipcode == "10016"|| zipcode == "10017" ||zipcode == "10022") %>
+
+<% neighborhood = "Gramercy Park/ Murray Hill" %>
+<% elsif (zipcode == "10012" ||  zipcode == "10013" || zipcode == "10014")
+neighborhood = "Soho/ Greenwich Village"%>
+
+
+<% elsif (zipcode == "10004" || zipcode == "10005" || zipcode == "10006" || zipcode == "10007" || zipcode == "10038" || zipcode == "10280")
+neighborhood = "Lower Manhattan"%>
+
+<% elsif (zipcode == "10021" || zipcode == "10028" || zipcode == "10044" || zipcode == "10065" || zipcode == "10075" || zipcode == "10128")
+neighborhood = "Upper East Side"%>
+<% end %>
+
+
+<% central_harlem_hash = {"Food": ["http://www.harlemgrown.org/"], 
+"Time":["https://www.harlemonestop.com/organization/1310/harlem-dowling-west-side-center-for-children-and-family-services"], "Donations": ["http://www.coalitionforthehomeless.org/resources/salvation-army-east-harlem-community-center/"]} %>
+
+<% chelsea_hash = {"Food": ["https://www.foodpantries.org/ci/ny-chelsea"],
+"Time": ["https://www.volunteermatch.org/search/opp2427690.jsp"], "Donations": ["https://volunteermatch.networkforgood.com/?code=Footer"]} %>
+
+<% gramercy_park_murry_hill_hash = {"Food": ["https://www.foodbanknyc.org/donate-food/"],
+"Time": ["http://www.foodbanknyc.org/volunteer/"], "Donations":["https://secure3.convio.net/fbnyc/site/Donation2?df_id=7464&mfc_pref=T&7464.donation=form1&_ga=2.210780370.694228225.1534401644-1055037965.1534401644"]} %>
+
+<% soho_greenwich_hash = {"Food": ["https://www.cityharvest.org/programs/donate-food/"], "Time": ["https://www.sohostudiosmiami.com/our-blog/2017/9/27/how-to-create-an-event-that-helps-support-disaster-relief"], "Donations": ["https://giving.cityharvest.org/donate-now"]} %>
+
+<% lower_manhattan_hash = {"Food": ["https://www.homelessshelterdirectory.org/cgi-bin/id/cityfoodbanks.cgi?city=Manhattan&state=NY"], "Time": ["https://www.nycservice.org/search/"], "Donations": ["https://donatenow.networkforgood.org/nycmedics"]} %>
+
+<% upper_east_side_hash = {"Food": ["https://www.foodbanknyc.org/donate-food/"], "Time": ["https://www1.nyc.gov/site/em/volunteer/nyc-cert.page"], "Donations": ["https://secure3.convio.net/fbnyc/site/Donation2?df_id=5844&mfc_pref=T&5844.donation=form1&recurring=1&_ga=2.47253479.1983913834.1534424903-118813911.1534424903"]} %>
+
+<% def iterate_through_hash(hash)%>
+<% hash.each do |key, value| %>
+ "If you would like to work in #{key} you can try the following links:"
+   <% value.each do |link| %>
+   link
+   <% end %>
+<% end %>
+<% end %>
+
+
+
+<% if neighborhood == "Central Harlem" %>
+<% iterate_through_hash(central_harlem_hash) %>
+<% elsif neighborhood == "Chelsea" %>
+<% iterate_through_hash(chelsea_hash) %>
+<% elsif neighborhood == "Gramercy Park_Murray Hill" %>
+<% iterate_through_hash(gramercy_park_murry_hill_hash) %>
+<% elsif neighborhood == "Soho_Greenwich Village" %>
+<% iterate_through_hash(soho_greenwich_hash) %>
+<% elsif neighborhood == "Lower Manhattan" %>
+<% iterate_through_hash(lower_manhattan_hash) %>
+<% elsif neighborhood == "Upper East Side" %>
+<% iterate_through_hash(upper_east_side_hash) %>
+<% end %> 
+
+
+<center class="testing_1">
+<id="menu" class="menu">
+<id="menu-item-1636" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1636 active"><a title="Home" href="index.html">Home</a>  <id="menu-item-1847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1847"><a title="Portfolio" href="about.html">About</a>
+ <id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1639 dropdown"><a title="About The Tests" href="userinput.rb"> How to Help</a> <id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1639 dropdown"><a title="About The Tests" href="the_team.html"> Meet the Team </a> -->
